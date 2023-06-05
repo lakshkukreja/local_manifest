@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="main" fetch="https://github.com/BlazeWizardOP" />
+  <remote name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD" />
+  <remote name="proton" fetch="https://github.com/kdrag0n" />
+  
+<!-- Device Trees -->
+ <project path="device/xiaomi/beryllium" name="device_xiaomi_beryllium" remote="main" revision="thirteen" clone-depth="1" />
+   
+ <!-- Common Device Tree -->
+ <project path="device/xiaomi/sdm845-common" name="device_xiaomi_sdm845-common" remote="main" revision="thirteen" clone-depth="1" /> 
+  
+ <!-- Kernel Trees-->
+ <project path="kernel/xiaomi/sdm845" name="kawaii_kernel_sdm845" remote="main" revision="main" clone-depth="1" />
+  
+ <!-- Vendor Tree -->
+ <project path="vendor/xiaomi" name="vendor_xiaomi_beryllium" remote="main" revision="thirteen" clone-depth="1" />
+   
+ <!-- Clang -->
+ <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" />
+ 
+ <!-- Clang -->
+ <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="proton" revision="master" clone-depth="1" />
+ 
+</manifest>
